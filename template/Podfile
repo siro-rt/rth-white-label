@@ -1,0 +1,53 @@
+platform :ios, '14.0'
+use_frameworks!
+
+workspace 'RTHRefresher'
+
+projects = [
+  "[Project Name]"
+]
+
+def shared_pods
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.1.0'
+  pod 'TTTAttributedLabel'
+  pod 'ExytePopupView', '~> 2.0.1'
+  pod 'PermissionsKit/CameraPermission', :git => 'https://github.com/sparrowcode/PermissionsKit'
+  pod 'PermissionsKit/PhotoLibraryPermission', :git => 'https://github.com/sparrowcode/PermissionsKit'
+  pod 'PermissionsKit/LocationWhenInUsePermission', :git => 'https://github.com/sparrowcode/PermissionsKit'
+  pod 'PermissionsKit/LocationAlwaysPermission', :git => 'https://github.com/sparrowcode/PermissionsKit'
+  pod 'ReachabilitySwift', '~> 5.0.0'
+  pod 'TwilioVideo', '~> 5'
+  pod 'Firebase/DynamicLinks', '~> 10.0.0'
+end
+
+projects.each do |proj|
+    next if proj.include? "[Project Name"
+    puts "Installing pods for " + proj
+    target proj do
+      project proj + '/' + proj + '.xcodeproj'
+	shared_pods
+      end
+
+    target 'Staging' + proj do
+      project proj + '/' + proj + '.xcodeproj'
+   	shared_pods
+      end
+
+    target 'Local' + proj do
+      project proj + '/' + proj + '.xcodeproj'
+    	shared_pods
+      end
+end
+
+# Skip this if building with Xcode 13.* and below
+# Xcode 14 and above need these changes in pods targets
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      config.build_settings['ENABLE_BITCODE'] = 'YES'
+      config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
+      config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+    end
+  end
+end

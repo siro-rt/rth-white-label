@@ -1,0 +1,153 @@
+/* 
+  InfoPlist.strings
+  Default english
+
+  Created by raj on 2021-11-13.
+  
+*/
+
+"AllowAccessText" = "Allow Access";
+"AnalysingLabelText" = "Analyzing Configuration";
+"AndroidSpeedTestDidNotComplete" = "Did not complete";
+"AppInstructionsLabelText" = "Please leave this app open during this step";
+"BatterySaverMessage" = "Please turn off Battery saver mode and plug in your phone if needed, as battery saver mode prevents scans from running correctly.";
+"BatterySaverNoButton" = "No";
+"BatterySaverTitle" = "Turn Off Battery Saver Mode";
+"BatterySaverYesButton" = "Yes";
+"BeginButtonText" = "Begin";
+"BenchmarkingLabelText" = "Benchmarking Network";
+"CameraAccessDeniedText" = "You must enable camera permissions in app settings in order to send a photo.";
+"CameraAccessRequiredText" = "Access to Camera Required";
+"CameraButtonText" = "Send Photo";
+"cameraViewInstructionLabel" = "Click 'START LIVE VIDEO' to begin sharing video from your back facing camera";
+"CancelButtonText" = "CANCEL";
+"CancelText" = "Cancel";
+"changeNetworkConfirmOkay" = "OKAY";
+"changeNetworkMessage" = "We were unable to send your offline check report to support. Try switching to a different WiFi network or temporarily switching to mobile data. Your support agent will see the results once the report has successfully sent";
+"changeNetworkTitle" = "No Network";
+"CheckInternetLabelText" = "We were unable to send your photo to support. Please check your Internet connection and try again.";
+"CloseConnectionText" = "Cancel Connection";
+"CodeConnectionErrorLabel" = "Connection Error - try again";
+"CodeCopiedText" = "Your key has been copied to the clipboard";
+"CodeErrorLabel" = "Whoops, we didn't recognize that code.";
+"CodeHelpLabel" = "Please enter the code provided by your support representative:";
+"CompletionText" = "Complete!";
+"ConnectedLabelText" = "Connected";
+"ConnectingLabelText" = "Connecting";
+"ContactingServerLabel" = "Contacting servers…";
+"ContinueButtonText" = "CONTINUE";
+"CopyKeyText" = "Copy Key";
+"DetailsButtonClickedText" = "The analysis will collect anonymous diagnostics on your network, these diagnostics will only be linked to you via a unique alphanumeric combination you may provide to support after the diagnostic has been run.
+Metrics collected include:
+ - The strength and quality of your connection
+ - Configuration of your network
+ - Interference from neighboring networks
+ - And other anonymous network data.";
+"DetailsButtonCloseButtonText" = "Close";
+"DetailsLabel" = "details";
+"DoneInstructionsText" = "Thanks! Please follow your support agent's next instruction.";
+"DownloadFailedLabelText" = "Did not complete";
+"DownloadLabelText" = "DOWNLOAD";
+"emailButtonBodyPrefix" = "My [APP NAME] Username is";
+"emailButtonSubject" = "My [APP NAME] Username";
+"EmailKeyText" = "Email Key";
+"FragmentInstructionLabel" = "Please stand next to your router while we verify the changes";
+"FragmentScanLabel" = "Analyzing network improvements";
+"FragmentTitleLabel" = "Changes Detected, Verifying Fix";
+"InstructionText" = "Next, place your phone/tablet in the location where you are experiencing the problem";
+"KeyInstructionLabelText" = "Please provide this key to your support agent.";
+"LicenseAgreementPlain" = "By tapping BEGIN you accept our";
+"LicenseAgreementUnderline" = "End User License Agreement";
+"LiveVideoButtonText" = "Live Video";
+"liveViewCameraPermissionAccept" = "Okay";
+"liveViewCameraPermissionDeny" = "Cancel";
+"liveViewCameraPermissionMessage" = "You must enable the camera permissions in order to begin the Live Video process.";
+"liveViewCameraPermissionTitle" = "Access to camera required";
+"liveViewShareKeyLabel" = "Please share your generated key with support:";
+"liveViewSnapshotTakenLabel" = "The support agent has taken a snapshot of your screen";
+"liveViewVideoCantConnectMessage" = "We are having issues connecting to the server.
+If these issues persist or your wifi isn't working please switch to cellular data.";
+"liveViewVideoLiveMessage" = "The agent can see what is on your screen";
+"liveViewVideoLiveTitle" = "LIVE";
+"liveViewVideoPausedMessage" = "Not sharing your camera. You are viewing a screenshot";
+"liveViewVideoPausedTitle" = "PAUSED";
+"liveViewVideoWaitingCancel" = "Cancel";
+"liveViewVideoWaitingMessage" = "Waiting for agent to accept your video";
+"LoadingTextInternetVerified" = "Internet connection verified, testing connection stability.";
+"LoadingTextSlowConnection" = "If this takes a while you may have an inconsistent or extremely slow network connection";
+"LoadingTextStandRouter" = "Please make sure you are standing in the location where you are experiencing the problem.";
+"LoadingTextVerifyingInternet" = "Verifying Internet connectivity and starting scan.";
+"LoadingTextVerifyingInternetCombined" = "Verifying Internet connectivity and starting scan.Internet connection verified, testing connection stability.Please make sure you are standing next to the router.If this takes a while you may have an inconsistent or extremely slow network connection";
+"locationPermissionDeniedButtonText" = "Okay";
+"locationPermissionDeniedMessageBody" = "The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.";
+"locationPermissionDeniedMessageTitle" = "We Need Permission to Continue";
+"locationServicesDiabledButtonText" = "Okay";
+"locationServicesDiabledMessageBody" = "For our app to read your wifi settings you need to enable the Location Services.
+
+Please make sure your location setting is ON.";
+"locationServicesDiabledMessageTitle" = "Uh oh! Location Disabled";
+"NextButtonText" = "Next";
+"NoInternetAltDialogMessage" = "No internet connection detected. Please:
+1) Forget the WiFi network and reconnect
+2) If still no connection, reboot your device.
+3) Reconnect to the network and try again.";
+"NoInternetAltDialogTitle" = "Uh oh! No Internet Connection";
+"NoInternetDialogOkay" = "Okay";
+"NoInternetDialogTitle" = "Uh oh! No Internet Connection";
+"NoInternetOfflineScanMessage" = "No internet connection detected through your WiFi connection. Would you like to run a offline check and send it to your support agent?";
+"NoWifiAltDialogMessage" = "Looks like you are not connected to WiFi. Connect to the correct WiFi network and try again!";
+"NoWifiAltDialogTitle" = "Uh oh! No Wifi Connection";
+"NSCameraUsageDescription" = "Send photos to support to help diagnose problems";
+"NSLocalNetworkUsageDescription" = "To optimize your network speed and performance, we need to test connectivity to all connected devices.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.";
+"NSLocationAlwaysUsageDescription" = "The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.";
+"NSLocationWhenInUseUsageDescription" = "The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.";
+"NSLocationWhenInUseUsageDescription" = "The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.";
+"NSPhotoLibraryUsageDescription" = "Select photos to send to support to help diagnose problems";
+"OfflineCheckAnalyzing" = "Analyzing local network";
+"OfflineCheckCreating" = "Creating Report";
+"OfflineCheckTesting" = "Testing Connection";
+"OfflineCheckTitle" = "Running an offline check on your network.";
+"PhotoPreviewRetakePhotoButton" = "Retake Photo";
+"PhotoPreviewSendButton" = "Send to Support";
+"PhotoSentLabelText" = "Your photo has been sent!";
+"PhotoUploadFailedLabelText" = "Uh oh! Could not send photo to support";
+"PreAnalysisConfirmDialogMessage" = "Have you have moved your phone/tablet next to the router? THIS IS VERY IMPORTANT";
+"PreAnalysisConfirmDialogNo" = "No";
+"PreAnalysisConfirmDialogTitle" = "Confirm you've moved your phone or tablet";
+"PreAnalysisConfirmDialogYes" = "Yes";
+"PreviouslyRunInstructionText" = "If the support agent has asked you to run another scan, place your phone/tablet in the location where you are experiencing the problem";
+"ProceedInstructionText" = "Please do not proceed until this is complete";
+"ProxyButtonText" = "Router Check";
+"RouteThisPreciseLocationMessage" = "Wi-Fi network information can only be obtained with Precise Location. To find your Wi-Fi issues, $(PRODUCT_NAME) requires Precise Location is enabled.";
+"RunAnalysisButtonText" = "Network Scan";
+"RunAnalysisText" = "I moved it";
+"runOfflineScanText" = "Run Offline Check";
+"ScanningLabelText" = "Scanning Network";
+"ScanTimeLabelText" = "Analyzing your network. This can take up to 2 minutes.";
+"ScreenInstructionLabelText" = "Please leave this screen open or the connection will end. Do not check notifications while on this screen.";
+"SelectOptionText" = "Please select the option your support agent has instructed you to choose:";
+"selfHelpLoadingError" = "There was an error loading your results.";
+"selfHelpRetryButton" = "Retry";
+"selfHelpStartOverCancel" = "No";
+"selfHelpStartOverConfirm" = "Yes";
+"selfHelpStartOverMessage" = "Are you sure you would like to end the review of your network issues?\n\nYour results will not be saved and you must run another scan to identify potential issues with your network.";
+"selfHelpStartOverTitle" = "Start Over";
+"SendingDataLabelText" = "Sending data to server...";
+"ShareKeyLabel" = "Please share your generated key with support:";
+"SpeedTestButtonText" = "View Speed Test";
+"StartButtonText" = "Start Over";
+"startLiveVideoButton" = "START LIVE VIDEO";
+"StartOverButtonText" = "Start Over";
+"startOverButtonText" = "Start Over";
+"TestingLabelText" = "Testing Connection";
+"TestResultLabelText" = "Your speed test results:";
+"ThanksText" = "Thanks! Please follow your support agent's next instruction.";
+"TryAgainButtonText" = "TRY AGAIN";
+"UploadFailedLabelText" = "Did not complete";
+"UploadingPhotoLabelText" = "Uploading Photo";
+"UploadLabelText" = "UPLOAD";
+"welcomeHelpInfoText" = "This analysis will help the support team by running diagnostics and readings on your network.";
+"welcomeText" = "Welcome to [APP NAME].";
+"YourKeyIsText" = "Your key is";
+"YourKeyText" = "Your key";

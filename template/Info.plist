@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>RouteThisPreciseLocationMessage</key>
+		<string>Wi-Fi network information can only be obtained with Precise Location. To find your Wi-Fi issues, $(PRODUCT_NAME) requires Precise Location is enabled.</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The location permission provides extra information on your wireless network and internet provider. This information is recorded only when a scan is running.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>SelfHelpTheme</key>
+	<string>light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>RouteThis Helps requires access to your camera to help diagnose problems</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>To optimize your network speed and performance, we need to test connectivity to all connected devices.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_bonjour._tcp</string>
+		<string>_lnp._tcp.</string>
+	</array>
+	<key>Configuration</key>
+	<string>$(TARGET_CONFIG)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>dynamic_link_routethis</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.routethis.helps</string>
+			</array>
+		</dict>
+	</array>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>FirebaseDeepLinkPasteboardRetrievalEnabled</key>
+	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Italic.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>primaryColor</key>
+	<string>#58DBB9</string>
+	<key>primaryTextColor</key>
+	<string>#2B3038</string>
+	<key>backgroundVariantTextColor</key>
+	<string>#E2F3FF</string>
+	<key>backgroundVariantColor</key>
+	<string>#2B3038</string>
+	<key>errorColor</key>
+	<string>#BA1A1A</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>warningColor</key>
+	<string>#FFC107</string>
+	<key>successColor</key>
+	<string>#00B451</string>
+</dict>
+</plist>

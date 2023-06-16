@@ -1,0 +1,78 @@
+name: [Project Name]
+options:
+  bundleIdPrefix: com.routethis
+  schemePathPrefix: ../
+  
+packages:
+  iPhoneNumberField:
+    url: https://github.com/MojtabaHs/iPhoneNumberField
+    majorVersion: 0.10.1
+  NavigationBackport:
+    url: https://github.com/johnpatrickmorgan/NavigationBackport
+    majorVersion: 0.8.1
+    
+projectReferences:
+  RouteThisAPI:
+    path: ../RouteThisAPI/RouteThisAPI.xcodeproj
+    
+targets:
+  [Project Name]:
+    templates:
+      - App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.routethis.[Prod Target Name]
+        DEVELOPMENT_TEAM: [Prod Development Team]
+        CODE_SIGN_STYLE: Manual
+      configs:
+        Release:
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: match AppStore com.routethis.[Prod Target Name]
+          TARGET_CONFIG: production
+        Debug:
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: match AppStore com.routethis.[Prod Target Name]
+          TARGET_CONFIG: production
+  Staging[Project Name]:
+    templates:
+      - App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.routethis.[Staging Target Name]
+        DEVELOPMENT_TEAM: [Staging Development Team]
+        CODE_SIGN_STYLE: Automatic
+      configs:
+        Release:
+          TARGET_CONFIG: staging
+        Debug:
+          TARGET_CONFIG: staging
+  Local[Project Name]:
+    templates:
+      - App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.routethis.[Local Target Name]
+        DEVELOPMENT_TEAM: [Local Development Team]
+        CODE_SIGN_STYLE: Automatic
+      configs:
+        Release:
+          TARGET_CONFIG: local
+        Debug:
+          TARGET_CONFIG: local
+          
+targetTemplates:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: 14.0
+    sources: 
+      - [Project Name]
+      - path: ../Source
+    entitlements:
+      path: [Project Name]/[Entitlements File Name]
+    dependencies:
+      - package: iPhoneNumberField
+      - package: NavigationBackport
+      - framework: ../RouteThisAPI/RouteThisAPI.xcframework
+      - framework: ../RouteThisAPI/RTSpeedTest.xcframework
+#      - target: RouteThisAPI/RouteThisAPI
